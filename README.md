@@ -4,12 +4,14 @@ Bachelor's Thesis - 2021 - Yildiz Technical University
 
 Team members: **AKMAN, Onur**; **AYDIN, Ahmet**; **SINAR, Emine Betul**
 
+Full report ![HERE](https://github.com/aonurakman/Stroke-Detection-n-Segmentation/blob/d046383654f4e6b97ad4dbb893ce0f26149a3cd9/Doc/Report.pdf)
+
 ### Description:
 Analyze the non-contrast computed tomography with the deep learning model to be created, classify it for the presence or absence of stroke, classify the type of the stroke (Hemorrhagic or Ischemic), and pixel-wise segmentation of the stroke region in the tomography image.
 
 * **Detection of the stroke**: Transfer learning of VGG16, Inception, MobileNet, ResNet, EfficientNet, DenseNet. Output is obtained by soft-voting all the models obtained.
 
-![Fusion of models in P1](https://i.hizliresim.com/59zgai2.PNG)
+[Fusion of models in P1](https://i.hizliresim.com/59zgai2.PNG)
 
 * **Classification and segmentation of stroke region**: Transfer learning of Mask-R-CNN. Output is the stroke type and the mask for the stroke region. In addition to Mask-R-CNN, also U-Net and YOLOv3 are trained for the same task and evaluated. They seem to perform better but they yield bounding boxes instead of a mask.
 
