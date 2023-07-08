@@ -2,7 +2,7 @@
 
 Bachelor's Thesis - 2021 - Yildiz Technical University
 
-Team members: **AKMAN, Onur**, **AYDIN, Ahmet**, **SINAR, Emine Betul **
+Team members: **AKMAN, Onur**, **AYDIN, Ahmet**, **SINAR, Emine Betul**
 
 ### Description:
 Analyze the non-contrast computed tomography with the deep learning model to be created, classify it for the presence or absence of stroke, classify the type of the stroke (Hemorrhagic or Ischemic), and pixel-wise segmentation of the stroke region in the tomography image.
