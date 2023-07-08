@@ -4,7 +4,7 @@ Bachelor's Thesis - 2021 - Yildiz Technical University
 
 Team members: **AKMAN, Onur**; **AYDIN, Ahmet**; **SINAR, Emine Betul**
 
-Full report ![HERE](https://github.com/aonurakman/Stroke-Detection-n-Segmentation/blob/d046383654f4e6b97ad4dbb893ce0f26149a3cd9/Doc/Report.pdf)
+Full report **[HERE](https://github.com/aonurakman/Stroke-Detection-n-Segmentation/blob/d046383654f4e6b97ad4dbb893ce0f26149a3cd9/Doc/Report.pdf)**.
 
 ### Description:
 Analyze the non-contrast computed tomography with the deep learning model to be created, classify it for the presence or absence of stroke, classify the type of the stroke (Hemorrhagic or Ischemic), and pixel-wise segmentation of the stroke region in the tomography image.
