@@ -1,0 +1,10 @@
+Google Colaboratory (Kod içeriğinde belirlenen dosya yollarına göre düzenlenmiş bir Google Drive hesabına mount edilmelidir.)
+VGG Image Annotator (Veri setinde mask olmadan verilen BT görüntülerini hazırlamak için kullanılmalıdır. Bu projede kullanılmamıştır.)
+Spyder ya da PyCharm (.py dosyalarının çalıştırılması için kullanılmalıdır.)
+
+--------------------------------
+
+
+Google Colaboratory (It should be mounted in a Google Drive account organized according to the file paths specified in the code content).
+VGG Image Annotator (Should be used to prepare CT images given without mask in the dataset. Not used in this project).
+Spyder or PyCharm (must be used to run .py files)

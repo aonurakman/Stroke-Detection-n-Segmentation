@@ -1,0 +1,13 @@
+Veriseti olarak kullanılan görüntüler gizlilik dolayısıyla paylaşılamamaktadır.
+Veriseti; Kanama sınıfına ait 1.093 BT görüntüsü
+İskemi sınıfına ait 1.130 BT görüntüsü
+İnme yok sınıfına ait 4.427 BT görüntüsü, toplamda ise 6650 PNG, DICOM, MASK ve OVERLAY formatta görüntü içermektedir.
+
+--------------------------------
+
+The images used as dataset cannot be shared for privacy reasons.
+Dataset; 1,093 CT images of the Bleeding class
+1,130 CT images of the ischemia class
+It contains 4,427 CT images belonging to the no stroke class and a total of 6650 PNG, DICOM, MASK and OVERLAY format images.
+
+

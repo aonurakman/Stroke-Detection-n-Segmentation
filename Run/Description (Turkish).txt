@@ -1,0 +1,60 @@
+--- Mask R-CNN Training ---
+
+* Mount edilen Google Drive içerisinde bir klasör açılmalıdır ve bu klasörün yolu "ROOT_DIR" değişkenine verilmelidir.
+* "https://github.com/matterport/Mask_RCNN" rep'indeki mrcnn klasörü, setup.py dosyası, requirements.txt dosyası
+	alınıp bu klasörün içine yerleştirilmelidir.
+* "https://github.com/matterport/Mask_RCNN/releases" linkinden "mask_rcnn_coco.h5" dosyası alınıp yine bu dizine 
+	eklenmelidir.
+* Bu klasörün içine "Dataset" adında bir klasör ve onun içine "train" ve "val" olmak üzere iki klasör açılmalıdır.
+* Train ve Validation Verisi olarak kullanılacak BT görüntülerinin orijinal halleri, mask görüntülerinin tutulduğu .JSON
+	dosyaları ile beraber ilgili dizinlere yerleştirilmelidir.
+* Kodda geçen dosya yoluna bağlı değişkenler sağlanan bu öğelerin Drive'daki yollarına uyumlu hale getirilmelidir.
+* Kod çalışırken her epoch sonunda model ağırlıkları kaydedilmektedir. Her epoch başına ~250 MB'lık alan bulunduğundan
+	emin olunmalıdır.
+* Bütün resim dosyalarının formatı .png olmalıdır.
+
+
+--- Mask R-CNN Testing ---
+
+* Mount edilen Google Drive içerisinde bir klasör açılmalıdır ve bu klasörün yolu "ROOT_DIR" değişkenine verilmelidir.
+* "https://github.com/matterport/Mask_RCNN" rep'indeki mrcnn klasörü, setup.py dosyası, requirements.txt dosyası
+	alınıp bu klasörün içine yerleştirilmelidir.
+* "test_imgs" ve "test_masks" olmak üzere iki klasör açılmalıdır. test_imgs içerisine denenmek istenen BT görüntülerinin
+	orijinal halleri, test_masks içine ise bu görüntülerin (aynı adı taşıyacak) mask görüntüleri yerleştirilmelidir.
+	Mask görselleri için görselde sadece mask'ın bulunduğu koordinatların piksel değerleri 0'dan farklı olmalıdır.
+* Denemede kullanılacak model klasörün ana dizinine yerleştirilmelidir.
+* Kodda geçen dosya yoluna bağlı değişkenler sağlanan bu öğelerin Drive'daki yollarına uyumlu hale getirilmelidir.
+* Bütün resim dosyalarının formatı .png olmalıdır.
+
+
+--- Mask R-CNN IoU Measurement ---
+
+* Mount edilen Google Drive içerisinde bir klasör açılmalıdır ve bu klasörün yolu "ROOT_DIR" değişkenine verilmelidir.
+* "https://github.com/matterport/Mask_RCNN" rep'indeki mrcnn klasörü, setup.py dosyası, requirements.txt dosyası
+	alınıp bu klasörün içine yerleştirilmelidir.
+* "img" ve "mask" olmak üzere iki klasör açılmalıdır. img içerisine denenmek istenen BT görüntülerinin
+	orijinal halleri, mask içine ise bu görüntülerin (aynı adı taşıyacak) mask görüntüleri yerleştirilmelidir.
+* Sınanacak model klasörün ana dizinine yerleştirilmelidir.
+* Kodda geçen dosya yoluna bağlı değişkenler sağlanan bu öğelerin Drive'daki yollarına uyumlu hale getirilmelidir.
+* Bütün resim dosyalarının formatı .png olmalıdır.
+
+--- U-Net Training ---
+* İlgili jupyter kod dosyası Google Colab altında açılmalıdır.
+* Database ayarlanmalı ve görüntüler görüntü ve maskesi aynı klasör altında olacak ve aynı ada sahip olacak şekilde düzenlenmelidir.
+* Drive'a eğitim ve validation görüntüleri yüklenmelidir.
+* Görüntüler yüklendikten sonra drive mount edilmeli ve kod satırları tek tek sırasıyla çalıştırılmalıdır.
+
+
+--- U-Net IoU Measurement ---
+
+* U-net_Test.py kodu spyder ya da pycharm ile açılmalıdır. Model.h5 dosyası kod ile aynı klasör altında olmalıdır. 
+* Test için seçilen görüntünün türü kod içinde ayarlanmalıdır 1 kanama 0 iskemi sınıfı olarak.
+* Çıktı görüntüsü yine aynı klasör altında görülebilecektir.
+* Tüm görüntülerin formatının .png olmasına dikkat edilmelidir.
+
+--- Yolov3 Training ---
+* İlgili jupyter kod dosyası Google Colab altında açılmalıdır.
+* Eğitim için görüntüler, görüntü içindeki maskelerin x ve y koordinatları genişlik ve yükseklik bilgileri ve sınıfları bilinmelidir.
+* Bu işlemleri içeren .txt dosyalarının elde edilmesi için ya LabelImg tool'u kullanılmalı ya da kod ile gerekli işlemler yapılarak Yolo formata uygun olacak şekilde düzenlenmelidir.
+* Drive'a eğitim ve validation görüntüleri ile train.cfg test.cfg ve train.names gibi gerekli dosyalar yolo'nun örnek dosyalarından seçilerek düzenlenip yüklenmelidir.
+* Görüntüler yüklendikten sonra drive mount edilmeli ve kod satırları tek tek sırasıyla çalıştırılmalıdır.
