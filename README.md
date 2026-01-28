@@ -97,10 +97,10 @@ The dataset consists of 6,650 CT images in various formats (PNG, DICOM, MASK, an
    ├── mask_rcnn_coco.h5
    └── Dataset/
        ├── train/
-       │   ├── images (PNG format)
+       │   ├── *.png (CT images)
        │   └── annotations.json
        └── val/
-           ├── images (PNG format)
+           ├── *.png (CT images)
            └── annotations.json
    ```
 
@@ -192,7 +192,7 @@ The dataset consists of 6,650 CT images in various formats (PNG, DICOM, MASK, an
 #### IoU Measurement
 
 1. **Environment Setup:**
-   - Open `U-net_Test.py` in an IDE (e.g., Spyder, PyCharm, or VS Code)
+   - Open `Unet_mask_test.py` in an IDE (e.g., Spyder, PyCharm, or VS Code)
    - Place the trained model file `model.h5` in the same directory as the script
 
 2. **Configuration:**
@@ -217,7 +217,7 @@ The dataset consists of 6,650 CT images in various formats (PNG, DICOM, MASK, an
 
 2. **Data Preparation:**
    - Prepare bounding box annotations for each training image
-   - Each annotation should include: x and y coordinates, width, height, and class labels
+   - Annotations must be in YOLO format: normalized center coordinates (x_center, y_center, width, height) relative to image dimensions, followed by class labels
    - Generate YOLO-format annotation files (`.txt`) using one of these methods:
      - Use [LabelImg](https://github.com/tzutalin/labelImg) annotation tool
      - Use provided scripts to convert existing annotations to YOLO format
