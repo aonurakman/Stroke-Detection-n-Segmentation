@@ -129,6 +129,8 @@ The dataset consists of 6,650 CT images in various formats (PNG, DICOM, MASK, an
    ```
    ROOT_DIR/
    ├── mrcnn/
+   ├── setup.py
+   ├── requirements.txt
    ├── model_weights.h5
    ├── test_imgs/
    └── test_masks/
@@ -157,6 +159,8 @@ The dataset consists of 6,650 CT images in various formats (PNG, DICOM, MASK, an
    ```
    ROOT_DIR/
    ├── mrcnn/
+   ├── setup.py
+   ├── requirements.txt
    ├── model_weights.h5
    ├── img/
    └── mask/
@@ -217,7 +221,7 @@ The dataset consists of 6,650 CT images in various formats (PNG, DICOM, MASK, an
 
 2. **Data Preparation:**
    - Prepare bounding box annotations for each training image
-   - Annotations must be in YOLO format: normalized center coordinates (x_center, y_center, width, height) relative to image dimensions, followed by class labels
+   - Annotations must be in YOLO format with one line per object: `class_id x_center y_center width height` (all coordinates normalized relative to image dimensions)
    - Generate YOLO-format annotation files (`.txt`) using one of these methods:
      - Use [LabelImg](https://github.com/tzutalin/labelImg) annotation tool
      - Use provided scripts to convert existing annotations to YOLO format
